@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praca domowa Sprint 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>            
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+      <div id="header-left"><a href="/">
+        <img src="./images/logo-logoipsum.png" alt="Logo logoipsum" id="logoipsum" />
+      </a>
+      <div>
+        <form id="header-search">
+          <input id="input-search" placeholder="Job type or location..." />
+        </form>
+      </div></div>
+      <div id="header-menu">
+        <span class="header-menu" id="offers"><a href="">Offers</a></span>
+        <span class="header-menu" id="faq"><a href="">FAQ</a></span>
+        <span class="header-menu" id="terms"><a href="">Terms</a></span>
+        <span class="header-menu" id="privacy"><a href="">Privacy Policies</a></span>
+      </div>
+      <div id="header-right">
+        <div class="header-button" id="header-post-a-job">
+          <a href=""><button id="post-a-job">Post a job</button></a>
+        </div>
+        <div class="header-button">
+          <select id="sign-in">
+            <option disabled selected value>Sign in</option>
+            <option value="mail">By mail</option>
+            <option value="google">Google</option>
+            <option value="facebook">Facebook</option>
+          </select>
+        </div>
+      </div> 
+    </div>
+    <hr />
+    <div id="menu-filters-position">
+      <div id="filters-position">
+        <div class="filters-position-checkbox">
+          <div class="filters-back" id="frontend-back"></div>
+          <div class="filters-position" id="checkbox-frontend">
+            <input type="checkbox" id="frontend" class="checkbox" />
+            <label for="frontend" class="checkbox-label">
+                <img src="./images/icon-fullstack.svg" alt="icon fullstack" />
+                Frontend
+            </label>
+          </div>
+        </div>
+        <div class="filters-position-checkbox">
+          <div class="filters-back" id="architekt-back"></div>
+          <div class="filters-position" id="checkbox-architekt">
+            <input type="checkbox" id="architekt" class="checkbox" />
+            <label for="architekt" class="checkbox-label">
+                <img src="./images/icon-fullstack.svg" alt="icon fullstack" />
+                Architekt
+            </label>
+          </div>
+        </div>
+        <div class="filters-position-checkbox">
+          <div class="filters-back" id="devops-back"></div>
+          <div class="filters-position" id="checkbox-devops">
+            <input type="checkbox" id="devops" class="checkbox" />
+            <label for="devops" class="checkbox-label">
+                <img src="./images/icon-fullstack.svg" alt="icon fullstack" />
+                Devops
+            </label>
+          </div>
+        </div>
+        <div class="filters-position-checkbox">
+          <div class="filters-back" id="fullstack-back"></div>
+          <div class="filters-position" id="checkbox-fullstack">
+            <input type="checkbox" id="fullstack" class="checkbox" />
+            <label for="fullstack" class="checkbox-label">
+                <img src="./images/icon-fullstack.svg" alt="icon fullstack" />
+                Fullstack
+            </label>
+          </div>
+        </div>
+        <div class="filters-position-checkbox">
+          <div class="filters-back" id="analityk-back"></div>
+          <div class="filters-position" id="checkbox-analityk">
+            <input type="checkbox" id="analityk" class="checkbox" />
+            <label for="analityk" class="checkbox-label">
+                <img src="./images/icon-fullstack.svg" alt="icon fullstack" />
+                Analityk
+            </label>
+          </div>
+        </div>
+        <div class="filters-position-checkbox">
+          <div class="filters-back" id="tester-back"></div>
+          <div class="filters-position" id="checkbox-tester">
+            <input type="checkbox" id="tester" class="checkbox" />
+            <label for="tester" class="checkbox-label">
+                <img src="./images/icon-fullstack.svg" alt="icon fullstack" />
+                Tester
+            </label>
+          </div>
+        </div>
+        <div id="position-more">
+          <select id="position-more-select">
+            <option disabled selected value>+ 6</option>
+            <option value="value1">Administrator</option>
+            <option value="value2">Project Manager</option>
+            <option value="value3">Support</option>
+            <option value="value4">Security</option>
+          </select>
+         </div>
+      </div>
+      <div id="filters-experience">
+        <select id="experience">
+          <option disabled selected value>Seniority</option>
+          <option value="value1">Junior</option>
+          <option value="value2">Mid</option>
+          <option value="value3">Senior</option>
+          <option value="value4">Expert</option>
+        </select>
+      </div>
+    </div>
+    <div id="menu-filters-technology">
+      <div id="filters-technology">
+        <div class="technology-type"><input type="checkbox" class="checkbox" id="git"/>
+        <label class="filters-technology-label" for="git">
+          <div class="filters-technology-image"><img src="./images/icon-technology.svg" alt="icon technology" /></div>
+          Git
+        </label></div>
+        <div class="technology-type"><input type="checkbox" class="checkbox" id="vue"/>
+        <label class="filters-technology-label" for="vue">
+            <div class="filters-technology-image"><img src="./images/icon-technology3.png" alt="icon technology" /></div>
+          Vue
+        </label></div>
+        <div class="technology-type"><input type="checkbox" class="checkbox" id="anglular"/>
+        <label class="filters-technology-label" for="anglular">
+            <div class="filters-technology-image"><img src="./images/icon-technology2.svg" alt="icon technology" /></div>
+          Anglular
+        </label></div>
+        <div class="technology-type"><input type="checkbox" class="checkbox" id="js"/>
+        <label class="filters-technology-label" for="js">
+            <div class="filters-technology-image"><img src="./images/icon-technology.svg" alt="icon technology" /></div>
+          JS
+        </label></div>
+        <div class="technology-type"><input type="checkbox" class="checkbox" id="css"/>
+        <label class="filters-technology-label" for="css">
+            <div class="filters-technology-image"><img src="./images/icon-technology3.png" alt="icon technology" /></div>
+          CSS
+        </label></div>
+        <div class="technology-type"><input type="checkbox" class="checkbox" id="html"/>
+        <label class="filters-technology-label" for="html">
+            <div class="filters-technology-image"><img src="./images/icon-technology2.svg" alt="icon technology" /></div>
+          HTML
+        </label></div>
+        <div class="technology-type"><input type="checkbox" class="checkbox" id="agile"/>
+        <label class="filters-technology-label" for="agile">
+            <div class="filters-technology-image"><img src="./images/icon-technology3.png" alt="icon technology" /></div>
+          Agile
+        </label></div>
+        <div class="technology-type"><input type="checkbox" class="checkbox" id="git2"/>
+        <label class="filters-technology-label" for="git2">
+            <div class="filters-technology-image"><img src="./images/icon-technology.svg" alt="icon technology" /></div>
+          Git
+        </label></div>
+
+        <div id="technology-more">
+          <select id="technology-more-select">
+            <option disabled selected value>+ 32</option>
+            <option value="value1">1</option>
+            <option value="value2">2 </option>
+            <option value="value3">3</option>
+            <option value="value4">4</option>
+          </select>
+         </div>
+      </div>
+      <div id="filters-extra">
+        <div id="remote"><input type="checkbox" class="checkbox" id="remote1"/>
+        <label for="remote1" class="filters-extra-label">100% Remote</label>
+        </div>
+        <div id="price-range"><input type="checkbox" class="checkbox" id="price-range1"/>
+        <label for="price-range1" class="filters-extra-label">Price-range</label>
+        </div>
+      </div>
+    </div>
+    <div id="menu-middle">
+      <div id="menu-middle-filters">
+        <a href=""><img src="./images/icon-filter.svg" alt="filters logo" id="icon-filter"/></a>
+        <span>Filters</span>
+      </div>
+      <div id="sort-by">
+        <span>Sort by:</span>
+        <select name="sort">
+          <option value="latest">latest</option>
+          <option value="latest">oldest</option>
+          <option value="latest">highest salary</option>
+          <option value="latest">lowest salary</option>
+        </select>
+      </div>
+      <div id="view">
+        <a href=""><img src="./images/icon-list.svg" alt="list view" id="icon-list"/></a>
+        <a href=""><img src="./images/icon-box.svg" alt="box view" id="icon-box"/></a>
+      </div>
+    </div>
+    <div id="menu-offers">
+      <div class="menu-offers-line"><div class="offer-back" id="offer-1"></div>
+      <div class="offer">
+        <div class="company-logo"><img src="./images/logo-netguru.png" alt="logo netguru" /></div>
+        <div class="offer-informations">
+          <div class="offer-head">
+            <div class="offer-title"><h4>Remote Ruby on Rails Developer</h4></div>
+            <div class="offer-remote"><img src="./images/logo-remote.png" /></div>
+          </div>
+          <div class="offer-details">
+            <span class="offer-company">Netguru S.A.</span>
+            <span>|</span>
+            <span class="offer-location">
+              <img src="./images/icon-location.svg" />
+              Poznan, Poland
+            </span>
+            <span>|</span>
+            <span class="offer-experience">Mid</span>
+            <span>|</span>
+            <span class="offer-date"><img src="./images/logo-new.png" /></span>
+          </div>
+        </div>
+        <div class="offer-extras">
+          <div class="salary-favorite"><span class="offer-salary">9 350 - 14 000 PLN net &#128176</span>
+            <img class="offer-favorite" src="./images/icon-heart.png" alt="icon heart"/></div>
+          <div class="offer-technology"><span class="offer-main-technology">Ruby</span><span class="offer-next-technology">JavaScript</span><span class="offer-next-technology">SQL</span></div>
+        </div>
+        <div class="offer-apply"><a href=""><button class="quickly-apply">Quickly apply</button></a></div>
+      </div>
+      </div>
+      <div class="menu-offers-line"><div class="offer-back" id="offer-2"></div>
+      <div class="offer">
+        <div class="company-logo"><img src="./images/logo-netguru.png" alt="logo netguru" /></div>
+        <div class="offer-informations">
+            <div class="offer-head">
+            <div class="offer-title"><h4>Senior Full-Stack Developer (Java)</h4></div>
+            </div>
+          <div class="offer-details">
+            <span class="offer-company">Netguru S.A.</span>
+            <span>|</span>
+            <span class="offer-location">
+              <img src="./images/icon-location.svg" />
+              Warsaw, Poland
+            </span>
+            <span>|</span>
+            <span class="offer-experience">Mid</span>
+            <span>|</span>
+            <span class="offer-date"><img src="./images/logo-new.png" /></span>
+          </div>
+        </div>
+        <div class="offer-extras">
+          <div class="salary-favorite"><span class="offer-salary">9 350 - 14 000 PLN net &#128176</span>
+          <img class="offer-favorite" src="./images/icon-heart.png" alt="icon heart"/></div>
+          <div class="offer-technology"><span class="offer-main-technology">Ruby</span><span class="offer-next-technology">JavaScript</span><span class="offer-next-technology">SQL</span></div>
+        </div>
+        <div class="offer-apply"><a href=""><button class="quickly-apply">Quickly apply</button></a></div>
+        </div>
+        </div>
+        <div class="menu-offers-line"><div class="offer-back" id="offer-3"></div>
+        <div class="offer">
+        <div class="company-logo"><img src="./images/logo-netguru.png" alt="logo netguru" /></div>
+        <div class="offer-informations">
+          <div class="offer-head">
+            <div class="offer-title"><h4>Remote Ruby on Rails Developer</h4></div>
+            <div class="offer-remote"><img src="./images/logo-remote.png" /></div>
+          </div>
+          <div class="offer-details">
+            <span class="offer-company">Netguru S.A.</span>
+            <span>|</span>
+            <span class="offer-location">
+              <img src="./images/icon-location.svg" />
+              Poznan, Poland
+            </span>
+            <span>|</span>
+            <span class="offer-experience">Mid</span>
+            <span>|</span>
+            <span class="offer-date">2d ago</span>
+          </div>
+        </div>
+        <div class="offer-extras">
+          <div class="salary-favorite"><span class="offer-salary">9 350 - 14 000 PLN net &#128176</span>
+          <img class="offer-favorite" src="./images/icon-heart.png" alt="icon heart"/></div>
+          <div class="offer-technology"><span class="offer-main-technology">Ruby</span><span class="offer-next-technology">JavaScript</span><span class="offer-next-technology">SQL</span></div>
+        </div>
+        <div class="offer-apply"><a href=""><button class="quickly-apply">Quickly apply</button></a></div>
+      </div>
+      </div>  
+      <div class="menu-offers-line"><div class="offer-back" id="offer-4"></div>
+      <div class="offer">
+        <div class="company-logo"><img src="./images/logo-netguru.png" alt="logo netguru" /></div>
+        <div class="offer-informations">
+          <div class="offer-head">
+            <div class="offer-title"><h4>Remote Ruby on Rails Developer</h4></div>
+            <div class="offer-remote"><img src="./images/logo-remote.png" /></div>
+          </div>
+          <div class="offer-details">
+            <span class="offer-company">Netguru S.A.</span>
+            <span>|</span>
+            <span class="offer-location">
+              <img src="./images/icon-location.svg" />
+              Chełm, Poland
+            </span>
+            <span>|</span>
+            <span class="offer-experience">Mid</span>
+            <span>|</span>
+            <span class="offer-date">29.10.2022</span>
+          </div>
+        </div>
+        <div class="offer-extras">
+          <div class="salary-favorite"><span class="offer-salary">9 350 - 14 000 PLN net &#128176</span>
+          <img class="offer-favorite" src="./images/icon-heart.png" alt="icon heart"/></div>
+          <div class="offer-technology"><span class="offer-main-technology">Ruby</span><span class="offer-next-technology">JavaScript</span><span class="offer-next-technology">SQL</span></div>
+        </div>
+        <div class="offer-apply"><a href=""><button class="quickly-apply">Quickly apply</button></a></div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
