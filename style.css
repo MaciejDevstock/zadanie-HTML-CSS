@@ -99,6 +99,12 @@ input[type="checkbox"] + label:hover {
   background-position: calc(100% - 5px) center;
 }
 
+.line {
+  width: 100%;
+  height: 2px;
+  background: #eceef7;
+}
+
 #menu-filters-position {
   background: #222426;
   border-radius: 10px;
@@ -337,7 +343,6 @@ input[type="checkbox"] + label:hover {
   border: none;
   height: 30px;
   width: 100px;
-  /* margin-left: 5px; */
   text-align: center;
   color: #490df4;
   text-decoration: underline;
@@ -356,6 +361,28 @@ input[type="checkbox"] + label:hover {
   outline: none;
 }
 
+#menu-offers-scroll {
+  overflow-y: scroll;
+  height: 450px;
+  position: relative;
+  width: 1450px;
+  margin-bottom: 30px;
+}
+
+#menu-offers-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+#menu-offers-scroll::-webkit-scrollbar-track {
+  border: 2px solid #eceef7;
+  border-radius: 15px;
+}
+
+#menu-offers-scroll::-webkit-scrollbar-thumb {
+  background: #222426;
+  border-radius: 15px;
+}
+
 #menu-offers {
   display: flex;
   flex-direction: column;
@@ -367,6 +394,7 @@ input[type="checkbox"] + label:hover {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin: 5px 0;
 }
 
 .offer-back {
@@ -500,4 +528,16 @@ input[type="checkbox"] + label:hover {
 
 .offer-main-technology {
   font-weight: 700;
+}
+
+.bottom {
+  margin: 10px 80px 20px 80px;
+  font-size: 12px;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom div {
+  flex-grow: 1;
 }
